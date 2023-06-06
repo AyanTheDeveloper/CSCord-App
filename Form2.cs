@@ -16,7 +16,7 @@ namespace CSCord_App
         {
             InitializeComponent();
         }
-        string webhookurl = "none";
+        public string webhookurl { get; set; }
         private void button2_Click(object sender, EventArgs e)
         {
             try
@@ -77,6 +77,16 @@ namespace CSCord_App
             {
                 MessageBox.Show("webhook url is either incorrect or theres some other error", "Error");
             }
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
