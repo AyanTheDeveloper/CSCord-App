@@ -55,7 +55,7 @@ namespace CSCord_App
 
         private void button6_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Coming soon, SPAM FOR EMBEDS!", "Sorry For The Inconvinience!");
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -191,9 +191,9 @@ namespace CSCord_App
         {
             CSCord.webhooks cscord = new CSCord.webhooks();
             try
-            { 
-               
+            {
 
+                MessageBox.Show("You do not have permission to access this button, because this button literally does not do anything, no joke its just for testing color codes.", "CSCord");
 
             }
             catch

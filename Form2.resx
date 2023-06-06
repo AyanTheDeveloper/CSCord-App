@@ -117,4 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label13.Text" xml:space="preserve">
+    <value>(i) For only templates!
+Our service reports the following error:
+We are aware of templates crashing
+if pressed three times, we are working
+on a fix. It will take time as this issue is
+in not just the CSCord app, but CSCord
+itself. Sorry for the inconvinience.</value>
+  </data>
 </root>
