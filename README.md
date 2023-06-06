@@ -5,7 +5,7 @@ Questions, Quries or Suggestions? Join [our discord server](https://discord.gg/m
 1. Go to our download page [here](https://github.com/AyanTheDeveloper/CSCord/releases/tag/CSCord-V1).
 2. Open your downloaded folder and open "CSCord App".
 3. Your all setup to use the CSCord app!
-4. # 🧾 Reccomendations For CSCord Usage
+4. # 🧾 Reccomendations For CSCord (App) Usage
 * Windows 10 Or Higher
 * Visual Studio 2019
 * Discord (Latest Versions)
