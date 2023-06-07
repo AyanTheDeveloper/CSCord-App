@@ -9,6 +9,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace CSCord_App
@@ -162,6 +163,18 @@ namespace CSCord_App
         private void button2_Click_1(object sender, EventArgs e)
         {
             MessageBox.Show("V.0.2 ALPHA: Removed embeds from front page, moved to new page to make space for new options.");
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked == true)
+            {
+                textBox5.PasswordChar = (char)0;
+            }
+            if (checkBox1.Checked == false)
+            {
+                textBox5.PasswordChar = Convert.ToChar("*");
+            }
         }
     }
 }

@@ -79,7 +79,7 @@
             // button1
             // 
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(322, 310);
+            this.button1.Location = new System.Drawing.Point(311, 310);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(158, 23);
             this.button1.TabIndex = 2;
@@ -136,9 +136,9 @@
             // button7
             // 
             this.button7.ForeColor = System.Drawing.Color.Black;
-            this.button7.Location = new System.Drawing.Point(358, 339);
+            this.button7.Location = new System.Drawing.Point(342, 336);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(89, 36);
+            this.button7.Size = new System.Drawing.Size(103, 36);
             this.button7.TabIndex = 17;
             this.button7.Text = "Spam It until limit";
             this.button7.UseVisualStyleBackColor = true;
@@ -311,6 +311,7 @@
             this.checkBox1.TabIndex = 43;
             this.checkBox1.Text = "Show Webhook URL";
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // button2
             // 
@@ -358,6 +359,7 @@
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "CSCord - App";
             this.Load += new System.EventHandler(this.Form1_Load);
