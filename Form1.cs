@@ -148,7 +148,13 @@ namespace CSCord_App
                     //int coloR2 = Int16.Parse(textBox8.Text); // returns 100
                     cscord.embed(textBox5.Text, textBox9.Text, textBox7.Text, textBox3.Text, textBox2.Text, textBox4.Text, 10181046);
                 }
-            
+            if (comboBox1.Text == "Red")
+            {
+                CSCord.webhooks cscord = new CSCord.webhooks();
+                //int coloR2 = Int16.Parse(textBox8.Text); // returns 100
+                cscord.embed(textBox5.Text, textBox9.Text, textBox7.Text, textBox3.Text, textBox2.Text, textBox4.Text, 15548997);
+            }
+
         }
 
         private void button5_Click(object sender, EventArgs e)
