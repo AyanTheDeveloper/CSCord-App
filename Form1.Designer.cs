@@ -349,7 +349,9 @@
             "Green",
             "Blue",
             "Red",
-            "Black"});
+            "Black",
+            "Yellow",
+            "Purple"});
             this.comboBox1.Location = new System.Drawing.Point(419, 245);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(111, 21);
