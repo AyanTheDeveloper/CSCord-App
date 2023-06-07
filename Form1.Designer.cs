@@ -303,10 +303,9 @@
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(419, 198);
-            this.textBox7.Multiline = true;
+            this.textBox7.Location = new System.Drawing.Point(399, 134);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(111, 23);
+            this.textBox7.Size = new System.Drawing.Size(111, 20);
             this.textBox7.TabIndex = 23;
             // 
             // label10
@@ -314,7 +313,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(416, 182);
+            this.label10.Location = new System.Drawing.Point(388, 111);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(134, 13);
             this.label10.TabIndex = 24;
@@ -325,7 +324,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(463, 229);
+            this.label11.Location = new System.Drawing.Point(446, 160);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(35, 13);
             this.label11.TabIndex = 25;
@@ -352,7 +351,7 @@
             "Black",
             "Yellow",
             "Purple"});
-            this.comboBox1.Location = new System.Drawing.Point(419, 245);
+            this.comboBox1.Location = new System.Drawing.Point(399, 176);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(111, 21);
             this.comboBox1.TabIndex = 29;
@@ -363,7 +362,7 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(426, 288);
+            this.label15.Location = new System.Drawing.Point(414, 210);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(96, 13);
             this.label15.TabIndex = 33;
@@ -371,10 +370,10 @@
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(419, 307);
+            this.textBox9.Location = new System.Drawing.Point(391, 235);
             this.textBox9.Multiline = true;
             this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(111, 66);
+            this.textBox9.Size = new System.Drawing.Size(139, 137);
             this.textBox9.TabIndex = 34;
             // 
             // button9
