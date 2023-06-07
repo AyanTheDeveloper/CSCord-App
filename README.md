@@ -11,4 +11,4 @@ Questions, Quries or Suggestions? Join [our discord server](https://discord.gg/m
 * # 📖 About 
 Since most people just want to use it for casual purposes and not making apps, I made this.
 # Actual CSCord 
-https://github.com/AyanTheDeveloper/CSCord
+Make your own apps with CSCord! https://github.com/AyanTheDeveloper/CSCord
