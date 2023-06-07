@@ -92,18 +92,8 @@ namespace CSCord_App
 
         private void button4_Click(object sender, EventArgs e)
         {
-            try
-            {
-                CSCord.webhooks cscord = new CSCord.webhooks();
-                //int coloR2 = Int16.Parse(textBox8.Text); // returns 100
-                cscord.embed(textBox5.Text, textBox9.Text, textBox7.Text, textBox3.Text, textBox2.Text, textBox4.Text, 1242520);
-            }
-            catch
-            {
-                MessageBox.Show("webhook url is either incorrect or theres some other error", "Error");
-            }
-        
-            }
+
+        }
 
         private void label9_Click(object sender, EventArgs e)
         {
@@ -118,43 +108,7 @@ namespace CSCord_App
         private void button2_Click(object sender, EventArgs e)
         {
             
-            if (comboBox1.Text=="Green")
-            {
-                CSCord.webhooks cscord = new CSCord.webhooks();
-                //int coloR2 = Int16.Parse(textBox8.Text); // returns 100
-                cscord.embed(textBox5.Text, textBox9.Text, textBox7.Text, textBox3.Text, textBox2.Text, textBox4.Text, 1242520);
-            }
-            if (comboBox1.Text == "Black")
-            {
-                CSCord.webhooks cscord = new CSCord.webhooks();
-                //int coloR2 = Int16.Parse(textBox8.Text); // returns 100
-                cscord.embed(textBox5.Text, textBox9.Text, textBox7.Text, textBox3.Text, textBox2.Text, textBox4.Text, 000000);
-            }
-            if (comboBox1.Text == "Blue")
-            {
-                CSCord.webhooks cscord = new CSCord.webhooks();
-                //int coloR2 = Int16.Parse(textBox8.Text); // returns 100
-                cscord.embed(textBox5.Text, textBox9.Text, textBox7.Text, textBox3.Text, textBox2.Text, textBox4.Text, 25500);
-            }
-            if (comboBox1.Text == "Yellow")
-            {
-                CSCord.webhooks cscord = new CSCord.webhooks();
-                //int coloR2 = Int16.Parse(textBox8.Text); // returns 100
-                cscord.embed(textBox5.Text, textBox9.Text, textBox7.Text, textBox3.Text, textBox2.Text, textBox4.Text, 16776960);
-              } 
-                if (comboBox1.Text == "Purple")
-                {
-                    CSCord.webhooks cscord = new CSCord.webhooks();
-                    //int coloR2 = Int16.Parse(textBox8.Text); // returns 100
-                    cscord.embed(textBox5.Text, textBox9.Text, textBox7.Text, textBox3.Text, textBox2.Text, textBox4.Text, 10181046);
-                }
-            if (comboBox1.Text == "Red")
-            {
-                CSCord.webhooks cscord = new CSCord.webhooks();
-                //int coloR2 = Int16.Parse(textBox8.Text); // returns 100
-                cscord.embed(textBox5.Text, textBox9.Text, textBox7.Text, textBox3.Text, textBox2.Text, textBox4.Text, 15548997);
-            }
-
+            
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -175,18 +129,7 @@ namespace CSCord_App
 
         private void button8_Click(object sender, EventArgs e)
         {
-            if (comboBox1.Text == "Green")
-            {
-                textBox1.Text = "!";
-            }
-            if (comboBox1.Text == string.Empty)
-            {
-                MessageBox.Show("Please enter in a color!", "Error");
-            }
-            if (comboBox1.Text == string.Empty)
-            {
-                MessageBox.Show("Please enter in a color!", "Error");
-            }
+            
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -207,6 +150,18 @@ namespace CSCord_App
             {
                 
              }
+        }
+
+        private void button8_Click_1(object sender, EventArgs e)
+        {
+            Form4 frm4 = new Form4();
+            frm4.Show();
+
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            MessageBox.Show("V.0.2 ALPHA: Removed embeds from front page, moved to new page to make space for new options.");
         }
     }
 }
