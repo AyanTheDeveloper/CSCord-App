@@ -465,7 +465,7 @@
             this.label13.Size = new System.Drawing.Size(158, 65);
             this.label13.TabIndex = 41;
             this.label13.Text = "(i) To set the username and \r\navatar for normal messages, \r\nthe option is provide" +
-    "d in the \r\nintegrations tab with the \r\nwebhook.";
+    "d in the \r\nintegrations tab with the \r\nwebhook. (on discord)";
             // 
             // Form1
             // 
