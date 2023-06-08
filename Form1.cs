@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DiscordMessenger;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -38,6 +39,23 @@ namespace CSCord_App
 
                     MessageBox.Show("Please download the latest version of the CSCord app or you will not be able to use CSCord! https://github.com/AyanTheDeveloper/CSCord-App/releases", "Update Required", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
                     this.Close();
+                }
+                WebRequest request2 = WebRequest.Create("https://raw.githubusercontent.com/AyanTheDeveloper/CSCord-App/master/AppServiceStatus");
+                WebResponse response2 = request2.GetResponse();
+                Stream dataStream2 = response2.GetResponseStream();
+                StreamReader reader2 = new StreamReader(dataStream2);
+                var responseFromServer2 = reader2.ReadToEnd();
+                MessageBox.Show("Service responded with: " + responseFromServer2, "Server Status");
+                if (responseFromServer2=="Maintenence\n")
+                {
+                    MessageBox.Show("Our service is currently in maintence, in preparation for an update or fix, please join our discord for live updates. https://discord.gg/m86NNb2Rhy", "Service in Maintenence");
+                    this.Close();
+                }
+                else if (responseFromServer2=="Shut Down\n")
+                {
+                    MessageBox.Show("Service is currently Shut Down, please join our discord for live updates. https://discord.gg/m86NNb2Rhy", "Service Down");
+                    this.Close();
+
                 }
             }
             catch
@@ -140,17 +158,18 @@ namespace CSCord_App
 
         private void button9_Click(object sender, EventArgs e)
         {
-            CSCord.webhooks cscord = new CSCord.webhooks();
+            CSCord.advanced cscordAdvanced = new CSCord.advanced();
             try
             {
 
-                MessageBox.Show("You do not have permission to access this button, because this button literally does not do anything, no joke its just for testing color codes.", "CSCord");
-
+            MessageBox.Show("You do not have permission to access this button, because this button literally does not do anything, no joke its just for testing color codes.", "CSCord");
+                
             }
             catch
             {
-                
-             }
+
+            }
+            
         }
 
         private void button8_Click_1(object sender, EventArgs e)
@@ -162,7 +181,7 @@ namespace CSCord_App
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            MessageBox.Show("V.0.2 ALPHA: Removed embeds from front page, moved to new page to make space for new options.");
+            MessageBox.Show("V.0.3 ALPHA: Added a checker to check if our servers our down or in maintenence", "Patch Notes");
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
