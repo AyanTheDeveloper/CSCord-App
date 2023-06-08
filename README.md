@@ -1,6 +1,6 @@
 [![CSCord](https://github.com/AyanTheDeveloper/CSCord/blob/master/cscordico.png?raw=true)](https://github.com/AyanTheDeveloper/CSCord-App) **The App**, [Get free premium in our discord!](https://discord.gg/m86NNb2Rhy)
 # 🎧 24/7 Support
-Questions, Quries or Suggestions? Join [our discord server](https://discord.gg/m86NNb2Rhy). 
+Questions, Quries or Suggestions? Join [our discord server](https://discord.gg/m86NNb2Rhy). | Version V.0.3+ will let you know if our service is in maintenence.
 # 📥 Installation
 1. Go to our download page [here](https://github.com/AyanTheDeveloper/CSCord/releases/tag/CSCord-V1).
 2. Open your downloaded folder and open "CSCord App".
