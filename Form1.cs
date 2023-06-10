@@ -29,12 +29,12 @@ namespace CSCord_App
                 var responseFromServer = reader.ReadToEnd();
                 MessageBox.Show("Updater responded with: " + responseFromServer, "Update Checker");
                 int res = Convert.ToInt32(responseFromServer);
-                if (res == 2)
+                if (res == 3)
                 {
                     
                     MessageBox.Show("Thank you for downloading the CSCord app! https://github.com/AyanTheDeveloper/CSCord-App/", "CSCord", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
                 }
-                if (res != 2)
+                if (res != 3)
                 {
 
                     MessageBox.Show("Please download the latest version of the CSCord app or you will not be able to use CSCord! https://github.com/AyanTheDeveloper/CSCord-App/releases", "Update Required", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);

@@ -60,11 +60,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Modern Warfare", 19.25F);
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(1, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(172, 29);
+            this.label1.Size = new System.Drawing.Size(111, 35);
             this.label1.TabIndex = 0;
             this.label1.Text = "CSCord";
             // 
@@ -96,7 +96,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(181, 13);
             this.label2.TabIndex = 3;
-            this.label2.Text = " Windows Compatible Alpha V.0.2";
+            this.label2.Text = " Windows Compatible Alpha V.0.3";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
@@ -317,7 +317,7 @@
             // button2
             // 
             this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(12, 32);
+            this.button2.Location = new System.Drawing.Point(7, 32);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(84, 64);
             this.button2.TabIndex = 44;
