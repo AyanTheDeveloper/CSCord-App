@@ -10,5 +10,5 @@ Questions, Quries or Suggestions? Join [our discord server](https://discord.gg/m
 * Discord (Latest Versions)
 * # 📖 About 
 Since most people just want to use it for casual purposes and not making apps, I made this.
-# Actual CSCord 
-Make your own apps with CSCord! https://github.com/AyanTheDeveloper/CSCord (way more features!)
+# CSCord Class Library 
+Make your own apps with CSCord! https://github.com/AyanTheDeveloper/CSCord (way more features!) | As of version V.0.4 we are using CSCord V8 - we will shift to V9 in the next update.
