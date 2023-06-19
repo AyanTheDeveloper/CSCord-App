@@ -2,7 +2,7 @@
 ~~DOWN FOR UPDATES!~~ BETA V.0.5 | Brought back up due to delays
 # 🎧 24/7 Support
 Questions, Quries or Suggestions? Join [our discord server](https://discord.gg/m86NNb2Rhy). | Version V.0.3+ will let you know if our service is in maintenence.
-# Changelog - BETA V.0.5
+# Changelog - BETA V.0.5 (unreleased)
 Its not released yet - but heres the changelog!
 New UI like discords settings,
 You can now send gifs,
