@@ -10,6 +10,7 @@ You can now attach videos,
 With CSCord V9, we now have access to the custom embed builder AKA CSCord Embeds Helper,
 Made colors brighter for embeds,
 Normal messages sending speed improved after removing some code.
+Now uses VB.NET aswell,
 Now supports fullscreen and more! 
 SNEAK PEAK:
 
