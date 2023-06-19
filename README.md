@@ -13,6 +13,7 @@ Normal messages sending speed improved after removing some code.
 Now supports fullscreen and more!
 SNEAK PEAK:
 
-![Screenshot 2023-06-19 130731](https://github.com/AyanTheDeveloper/CSCord-App/assets/110039634/1b43ca7c-a151-40a9-9ffe-1a13b37c95c6)
+![image](https://github.com/AyanTheDeveloper/CSCord-App/assets/110039634/eeee1ed9-8952-4a06-b59f-21ad82ecad69)
+
 
 The above shows a in development version of the CSCord App. The spacing for buttons and more will be fixed at time of release.
