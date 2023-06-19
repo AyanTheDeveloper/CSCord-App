@@ -89,6 +89,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="CSCordErrorHelper.vbproj" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -227,6 +228,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Screenshot 2023-06-19 124744.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ErrorHelper.vb" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
