@@ -89,6 +89,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="CSCordCredits.pyproj" />
     <None Include="CSCordErrorHelper.vbproj" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -230,7 +231,10 @@
     <None Include="Resources\Screenshot 2023-06-19 124744.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CSCordCredits.py" />
     <Content Include="ErrorHelper.vb" />
+    <None Include="Resources\Screenshot 2023-06-20 194621.png" />
+    <None Include="Resources\det4fms-fca72384-3cb7-495e-b3bd-f7035673cb6a.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

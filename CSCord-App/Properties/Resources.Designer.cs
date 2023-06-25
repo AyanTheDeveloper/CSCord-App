@@ -63,6 +63,16 @@ namespace CSCord_App.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap det4fms_fca72384_3cb7_495e_b3bd_f7035673cb6a {
+            get {
+                object obj = ResourceManager.GetObject("det4fms-fca72384-3cb7-495e-b3bd-f7035673cb6a", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Screenshot_2023_06_15_125923 {
             get {
                 object obj = ResourceManager.GetObject("Screenshot 2023-06-15 125923", resourceCulture);
@@ -506,6 +516,16 @@ namespace CSCord_App.Properties {
         internal static System.Drawing.Bitmap Screenshot_2023_06_19_124744 {
             get {
                 object obj = ResourceManager.GetObject("Screenshot 2023-06-19 124744", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2023_06_20_194621 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2023-06-20 194621", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

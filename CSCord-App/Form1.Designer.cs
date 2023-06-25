@@ -39,6 +39,7 @@
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.NM2PB = new System.Windows.Forms.PictureBox();
             this.embeds2PB = new System.Windows.Forms.PictureBox();
             this.Templates2PB = new System.Windows.Forms.PictureBox();
@@ -59,7 +60,6 @@
             this.pictureBox41 = new System.Windows.Forms.PictureBox();
             this.pictureBox40 = new System.Windows.Forms.PictureBox();
             this.pictureBox39 = new System.Windows.Forms.PictureBox();
-            this.pictureBox38 = new System.Windows.Forms.PictureBox();
             this.pictureBox37 = new System.Windows.Forms.PictureBox();
             this.pictureBox36 = new System.Windows.Forms.PictureBox();
             this.pictureBox35 = new System.Windows.Forms.PictureBox();
@@ -86,7 +86,12 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NM2PB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.embeds2PB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Templates2PB)).BeginInit();
@@ -107,7 +112,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).BeginInit();
@@ -134,6 +138,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             this.SuspendLayout();
             // 
             // userControl1
@@ -149,12 +155,14 @@
             // 
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
             this.textBox1.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.75F);
-            this.textBox1.ForeColor = System.Drawing.Color.White;
+            this.textBox1.ForeColor = System.Drawing.Color.Gray;
             this.textBox1.Location = new System.Drawing.Point(237, 152);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(308, 31);
+            this.textBox1.PasswordChar = '*';
+            this.textBox1.Size = new System.Drawing.Size(313, 31);
             this.textBox1.TabIndex = 17;
+            this.textBox1.UseSystemPasswordChar = true;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
             // 
             // textBox2
@@ -208,7 +216,7 @@
             this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
             this.textBox5.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.75F);
             this.textBox5.ForeColor = System.Drawing.Color.White;
-            this.textBox5.Location = new System.Drawing.Point(744, 153);
+            this.textBox5.Location = new System.Drawing.Point(583, 76);
             this.textBox5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(308, 31);
@@ -264,8 +272,18 @@
             this.panel4.Location = new System.Drawing.Point(-2, -7);
             this.panel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(212, 707);
+            this.panel4.Size = new System.Drawing.Size(212, 757);
             this.panel4.TabIndex = 30;
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.Image = global::CSCord_App.Properties.Resources.Screenshot_2023_06_20_194621;
+            this.pictureBox14.Location = new System.Drawing.Point(730, 123);
+            this.pictureBox14.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(71, 32);
+            this.pictureBox14.TabIndex = 66;
+            this.pictureBox14.TabStop = false;
             // 
             // NM2PB
             // 
@@ -397,72 +415,78 @@
             // 
             this.pictureBox46.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox46.Image = global::CSCord_App.Properties.Resources.Screenshot_2023_06_19_115632;
-            this.pictureBox46.Location = new System.Drawing.Point(743, 556);
+            this.pictureBox46.Location = new System.Drawing.Point(742, 555);
             this.pictureBox46.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox46.Name = "pictureBox46";
             this.pictureBox46.Size = new System.Drawing.Size(79, 46);
             this.pictureBox46.TabIndex = 64;
             this.pictureBox46.TabStop = false;
+            this.pictureBox46.Click += new System.EventHandler(this.pictureBox46_Click);
             // 
             // pictureBox45
             // 
             this.pictureBox45.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox45.Image = global::CSCord_App.Properties.Resources.Screenshot_2023_06_19_115604;
-            this.pictureBox45.Location = new System.Drawing.Point(915, 595);
+            this.pictureBox45.Location = new System.Drawing.Point(906, 598);
             this.pictureBox45.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox45.Name = "pictureBox45";
             this.pictureBox45.Size = new System.Drawing.Size(85, 54);
             this.pictureBox45.TabIndex = 63;
             this.pictureBox45.TabStop = false;
+            this.pictureBox45.Click += new System.EventHandler(this.pictureBox45_Click);
             // 
             // pictureBox44
             // 
             this.pictureBox44.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox44.Image = global::CSCord_App.Properties.Resources.Screenshot_2023_06_19_115549;
-            this.pictureBox44.Location = new System.Drawing.Point(828, 592);
+            this.pictureBox44.Location = new System.Drawing.Point(821, 595);
             this.pictureBox44.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox44.Name = "pictureBox44";
             this.pictureBox44.Size = new System.Drawing.Size(92, 45);
             this.pictureBox44.TabIndex = 62;
             this.pictureBox44.TabStop = false;
+            this.pictureBox44.Click += new System.EventHandler(this.pictureBox44_Click);
             // 
             // pictureBox43
             // 
             this.pictureBox43.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox43.Image = global::CSCord_App.Properties.Resources.Screenshot_2023_06_19_115514;
-            this.pictureBox43.Location = new System.Drawing.Point(828, 550);
+            this.pictureBox43.Location = new System.Drawing.Point(738, 595);
             this.pictureBox43.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox43.Name = "pictureBox43";
             this.pictureBox43.Size = new System.Drawing.Size(88, 46);
             this.pictureBox43.TabIndex = 61;
             this.pictureBox43.TabStop = false;
+            this.pictureBox43.Click += new System.EventHandler(this.pictureBox43_Click);
             // 
             // pictureBox42
             // 
             this.pictureBox42.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox42.Image = global::CSCord_App.Properties.Resources.Screenshot_2023_06_19_115459;
-            this.pictureBox42.Location = new System.Drawing.Point(918, 549);
+            this.pictureBox42.Location = new System.Drawing.Point(910, 551);
             this.pictureBox42.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox42.Name = "pictureBox42";
             this.pictureBox42.Size = new System.Drawing.Size(80, 54);
             this.pictureBox42.TabIndex = 60;
             this.pictureBox42.TabStop = false;
+            this.pictureBox42.Click += new System.EventHandler(this.pictureBox42_Click);
             // 
             // pictureBox33
             // 
             this.pictureBox33.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox33.Image = global::CSCord_App.Properties.Resources.Screenshot_2023_06_19_115447;
-            this.pictureBox33.Location = new System.Drawing.Point(752, 591);
+            this.pictureBox33.Location = new System.Drawing.Point(833, 550);
             this.pictureBox33.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox33.Name = "pictureBox33";
             this.pictureBox33.Size = new System.Drawing.Size(80, 46);
             this.pictureBox33.TabIndex = 59;
             this.pictureBox33.TabStop = false;
+            this.pictureBox33.Click += new System.EventHandler(this.pictureBox33_Click);
             // 
             // pictureBox41
             // 
             this.pictureBox41.Image = global::CSCord_App.Properties.Resources.Screenshot_2023_06_18_203825;
-            this.pictureBox41.Location = new System.Drawing.Point(1025, 606);
+            this.pictureBox41.Location = new System.Drawing.Point(1001, 607);
             this.pictureBox41.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox41.Name = "pictureBox41";
             this.pictureBox41.Size = new System.Drawing.Size(126, 31);
@@ -488,16 +512,6 @@
             this.pictureBox39.Size = new System.Drawing.Size(126, 31);
             this.pictureBox39.TabIndex = 56;
             this.pictureBox39.TabStop = false;
-            // 
-            // pictureBox38
-            // 
-            this.pictureBox38.Image = global::CSCord_App.Properties.Resources.Screenshot_2023_06_18_2038251;
-            this.pictureBox38.Location = new System.Drawing.Point(1058, 156);
-            this.pictureBox38.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox38.Name = "pictureBox38";
-            this.pictureBox38.Size = new System.Drawing.Size(126, 31);
-            this.pictureBox38.TabIndex = 55;
-            this.pictureBox38.TabStop = false;
             // 
             // pictureBox37
             // 
@@ -542,7 +556,7 @@
             // pictureBox32
             // 
             this.pictureBox32.Image = global::CSCord_App.Properties.Resources.Screenshot_2023_06_18_2037361;
-            this.pictureBox32.Location = new System.Drawing.Point(789, 523);
+            this.pictureBox32.Location = new System.Drawing.Point(745, 519);
             this.pictureBox32.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox32.Name = "pictureBox32";
             this.pictureBox32.Size = new System.Drawing.Size(126, 23);
@@ -612,7 +626,7 @@
             // pictureBox25
             // 
             this.pictureBox25.Image = global::CSCord_App.Properties.Resources.Screenshot_2023_06_17_221749;
-            this.pictureBox25.Location = new System.Drawing.Point(734, 139);
+            this.pictureBox25.Location = new System.Drawing.Point(575, 63);
             this.pictureBox25.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox25.Name = "pictureBox25";
             this.pictureBox25.Size = new System.Drawing.Size(338, 58);
@@ -622,7 +636,7 @@
             // pictureBox24
             // 
             this.pictureBox24.Image = global::CSCord_App.Properties.Resources.Screenshot_2023_06_18_203725;
-            this.pictureBox24.Location = new System.Drawing.Point(730, 106);
+            this.pictureBox24.Location = new System.Drawing.Point(481, 78);
             this.pictureBox24.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox24.Name = "pictureBox24";
             this.pictureBox24.Size = new System.Drawing.Size(112, 30);
@@ -763,12 +777,56 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // pictureBox15
+            // 
+            this.pictureBox15.Image = global::CSCord_App.Properties.Resources.Screenshot_2023_06_17_221749;
+            this.pictureBox15.Location = new System.Drawing.Point(727, 153);
+            this.pictureBox15.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(338, 58);
+            this.pictureBox15.TabIndex = 67;
+            this.pictureBox15.TabStop = false;
+            // 
+            // textBox9
+            // 
+            this.textBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
+            this.textBox9.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.75F);
+            this.textBox9.ForeColor = System.Drawing.Color.White;
+            this.textBox9.Location = new System.Drawing.Point(737, 166);
+            this.textBox9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(308, 31);
+            this.textBox9.TabIndex = 68;
+            // 
+            // pictureBox16
+            // 
+            this.pictureBox16.Image = global::CSCord_App.Properties.Resources.Screenshot_2023_06_18_203815;
+            this.pictureBox16.Location = new System.Drawing.Point(1058, 166);
+            this.pictureBox16.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(126, 31);
+            this.pictureBox16.TabIndex = 69;
+            this.pictureBox16.TabStop = false;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(316, 658);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 70;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
-            this.ClientSize = new System.Drawing.Size(1370, 693);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.pictureBox16);
+            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.pictureBox15);
+            this.Controls.Add(this.pictureBox14);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.pictureBox46);
             this.Controls.Add(this.pictureBox45);
@@ -779,7 +837,6 @@
             this.Controls.Add(this.pictureBox41);
             this.Controls.Add(this.pictureBox40);
             this.Controls.Add(this.pictureBox39);
-            this.Controls.Add(this.pictureBox38);
             this.Controls.Add(this.pictureBox37);
             this.Controls.Add(this.pictureBox36);
             this.Controls.Add(this.pictureBox35);
@@ -822,6 +879,7 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NM2PB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.embeds2PB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Templates2PB)).EndInit();
@@ -842,7 +900,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).EndInit();
@@ -869,6 +926,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -913,7 +972,6 @@
         private System.Windows.Forms.PictureBox pictureBox35;
         private System.Windows.Forms.PictureBox pictureBox36;
         private System.Windows.Forms.PictureBox pictureBox37;
-        private System.Windows.Forms.PictureBox pictureBox38;
         private System.Windows.Forms.PictureBox pictureBox39;
         private System.Windows.Forms.PictureBox pictureBox40;
         private System.Windows.Forms.PictureBox pictureBox41;
@@ -934,6 +992,11 @@
         private System.Windows.Forms.PictureBox embeds1PB;
         private System.Windows.Forms.PictureBox NM2PB;
         private System.Windows.Forms.PictureBox embeds2PB;
+        private System.Windows.Forms.PictureBox pictureBox14;
+        private System.Windows.Forms.PictureBox pictureBox15;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.PictureBox pictureBox16;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
 

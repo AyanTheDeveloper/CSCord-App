@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CSCordEmbedsHelper;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace CSCord_App
 {
@@ -25,7 +27,7 @@ namespace CSCord_App
                     textBox6.BorderStyle = BorderStyle.None;
                       textBox7.BorderStyle = BorderStyle.None;
                         textBox8.BorderStyle = BorderStyle.None;
-                         
+                         textBox9.BorderStyle = BorderStyle.None;
 
         }
         protected override CreateParams CreateParams
@@ -39,7 +41,7 @@ namespace CSCord_App
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            Process.Start("python.exe", Environment.CurrentDirectory + @"\CSCordCredits.exe");
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -65,7 +67,125 @@ namespace CSCord_App
         private void pictureBox12_Click(object sender, EventArgs e)
         {
             CSCord.webhooks webhooks = new CSCord.webhooks();
-            webhooks.embed(textBox1.Text, "", "1st Ever Message From The New CSCord App", textBox2.Text, textBox3.Text, textBox4.Text, 0);
+            // webhooks.embed(textBox1.Text, "", "1st Ever Message From The New CSCord App", textBox2.Text, textBox3.Text, textBox4.Text, 0);
+            try
+            {
+                if (comboBox1.Text == string.Empty)
+                {
+                    MessageBox.Show("Please select a color!");
+                }
+
+                if (comboBox1.Text == "Green")
+                {
+                    new DiscordMessage()
+                           .SetUsername(textBox5.Text)
+                           .SetAvatar(textBox8.Text)
+                           .AddEmbed()
+                             .SetTimestamp(DateTime.Now)
+                             .SetTitle(textBox2.Text)
+                             .SetDescription(textBox3.Text)
+                             .SetFooter(textBox4.Text + " | Made with https://bit.ly/official-cscord")
+                             .SetImage(textBox6.Text)
+                             .SetThumbnail(textBox7.Text)
+                             .SetAuthor(textBox9.Text)
+                             .SetColor(1242520)
+                             .Build()
+                             .SendMessage(textBox1.Text);
+                }
+                if (comboBox1.Text == "Black")
+                {
+                    new DiscordMessage()
+                            .SetUsername(textBox5.Text)
+                            .SetAvatar(textBox8.Text)
+                            .AddEmbed()
+                              .SetTimestamp(DateTime.Now)
+                              .SetTitle(textBox2.Text)
+                              .SetDescription(textBox3.Text)
+                              .SetFooter(textBox4.Text + " | Made with https://bit.ly/official-cscord")
+                              .SetImage(textBox6.Text)
+                              .SetThumbnail(textBox7.Text)
+                              .SetAuthor(textBox9.Text)
+                              .SetColor(000000)
+                              .Build()
+                              .SendMessage(textBox1.Text);
+                }
+                if (comboBox1.Text == "Blue")
+                {
+                    new DiscordMessage()
+                           .SetUsername(textBox5.Text)
+                           .SetAvatar(textBox8.Text)
+                           .AddEmbed()
+                             .SetTimestamp(DateTime.Now)
+                             .SetTitle(textBox2.Text)
+                             .SetDescription(textBox3.Text)
+                             .SetFooter(textBox4.Text + " | Made with https://bit.ly/official-cscord")
+                             .SetImage(textBox6.Text)
+                             .SetThumbnail(textBox7.Text)
+                             .SetAuthor(textBox9.Text)
+                             .SetColor(25500)
+                             .Build()
+                             .SendMessage(textBox1.Text);
+         
+                }
+                if (comboBox1.Text == "Yellow")
+                {
+                    new DiscordMessage()
+                           .SetUsername(textBox5.Text)
+                           .SetAvatar(textBox8.Text)
+                           .AddEmbed()
+                             .SetTimestamp(DateTime.Now)
+                             .SetTitle(textBox2.Text)
+                             .SetDescription(textBox3.Text)
+                             .SetFooter(textBox4.Text + " | Made with https://bit.ly/official-cscord")
+                             .SetImage(textBox6.Text)
+                             .SetThumbnail(textBox7.Text)
+                             .SetAuthor(textBox9.Text)
+                             .SetColor(16776960)
+                             .Build()
+                             .SendMessage(textBox1.Text);
+
+                }
+                if (comboBox1.Text == "Purple")
+                {
+
+                    new DiscordMessage()
+                .SetUsername(textBox5.Text)
+                .SetAvatar(textBox8.Text)
+                .AddEmbed()
+                  .SetTimestamp(DateTime.Now)
+                  .SetTitle(textBox2.Text)
+                  .SetDescription(textBox3.Text)
+                  .SetFooter(textBox4.Text + " | Made with https://bit.ly/official-cscord")
+                  .SetImage(textBox6.Text)
+                  .SetThumbnail(textBox7.Text)
+                  .SetAuthor(textBox9.Text)
+                  .SetColor(10181046)
+                  .Build()
+                   .SendMessage(textBox1.Text);
+                               
+                }
+                if (comboBox1.Text == "Red")
+                {
+        new DiscordMessage()
+                            .SetUsername(textBox5.Text)
+                            .SetAvatar(textBox8.Text)
+                            .AddEmbed()
+                              .SetTimestamp(DateTime.Now)
+                              .SetTitle(textBox2.Text)
+                              .SetDescription(textBox3.Text)
+                              .SetFooter(textBox4.Text + " | Made with https://bit.ly/official-cscord")
+                              .SetImage(textBox6.Text)
+                              .SetThumbnail(textBox7.Text)
+                              .SetAuthor(textBox9.Text)
+                              .SetColor(15548997)
+                              .Build()
+                              .SendMessage(textBox1.Text);
+                }
+            }
+            catch
+            {
+                MessageBox.Show("There was an error, make sure you fill the required fields.");
+            }
         }
 
         private void pictureBox14_Click(object sender, EventArgs e)
@@ -138,6 +258,7 @@ namespace CSCord_App
 
             }
         }
+        string color = "none";
 
         private void SpV1PB_Click_1(object sender, EventArgs e)
         {
@@ -168,7 +289,7 @@ namespace CSCord_App
 
         private void Templates2PB_Click(object sender, EventArgs e)
         {
-
+             MessageBox.Show("We are sad to announce - to meet the deadline for the CSCord app we will need to cut this feature out until the next update. Sorry!", "Feature Unavailible");
         }
 
         private void SpV1PB_Click_2(object sender, EventArgs e)
@@ -193,9 +314,46 @@ namespace CSCord_App
 
         private void pictureBox23_Click(object sender, EventArgs e)
         {
-            CSCordErrorHelper.ErrorHelper CSCordErrorHelper1 = new CSCordErrorHelper.ErrorHelper();
-            CSCordErrorHelper1.ShowMb();
+       //     CSCordErrorHelper.ErrorHelper CSCordErrorHelper1 = new CSCordErrorHelper.ErrorHelper();
+     //       CSCordErrorHelper1.ShowMb();
             //thats all.
+            ;
+        }
+
+        private void pictureBox46_Click(object sender, EventArgs e)
+        {
+            color = "Black";
+            comboBox1.Text = color;
+        }
+
+        private void pictureBox33_Click(object sender, EventArgs e)
+        {
+            color = "Blue";
+            comboBox1.Text = color;
+        }
+
+        private void pictureBox42_Click(object sender, EventArgs e)
+        {
+            color = "Red";
+            comboBox1.Text = color;
+        }
+
+        private void pictureBox43_Click(object sender, EventArgs e)
+        {
+            color = "Green";
+            comboBox1.Text = color;
+        }
+
+        private void pictureBox44_Click(object sender, EventArgs e)
+        {
+            color = "Yellow";
+            comboBox1.Text = color;
+        }
+
+        private void pictureBox45_Click(object sender, EventArgs e)
+        {
+            color = "Purple";
+            comboBox1.Text = color;
         }
     }
 }
