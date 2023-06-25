@@ -22,5 +22,4 @@ Questions, Quries or Suggestions? Join [our discord server](https://discord.gg/m
 
 ![image](https://github.com/AyanTheDeveloper/CSCord-App/assets/110039634/eeee1ed9-8952-4a06-b59f-21ad82ecad69)
 
-
-
+Its a big step for me as we came along this weird journery of a crappy idea which is now a full running business! Special Thanks To:
