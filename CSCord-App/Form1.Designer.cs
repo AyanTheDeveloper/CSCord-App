@@ -28,17 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.userControl1 = new System.Windows.Forms.UserControl();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.NM2PB = new System.Windows.Forms.PictureBox();
             this.embeds2PB = new System.Windows.Forms.PictureBox();
@@ -86,11 +90,9 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.pictureBox16 = new System.Windows.Forms.PictureBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NM2PB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.embeds2PB)).BeginInit();
@@ -138,8 +140,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             this.SuspendLayout();
             // 
             // userControl1
@@ -159,10 +159,9 @@
             this.textBox1.Location = new System.Drawing.Point(237, 152);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.PasswordChar = '*';
+            this.textBox1.PasswordChar = '•';
             this.textBox1.Size = new System.Drawing.Size(313, 31);
             this.textBox1.TabIndex = 17;
-            this.textBox1.UseSystemPasswordChar = true;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
             // 
             // textBox2
@@ -195,21 +194,12 @@
             this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
             this.textBox4.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.75F);
             this.textBox4.ForeColor = System.Drawing.Color.White;
-            this.textBox4.Location = new System.Drawing.Point(232, 563);
+            this.textBox4.Location = new System.Drawing.Point(236, 562);
             this.textBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(313, 31);
             this.textBox4.TabIndex = 21;
             this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(49)))));
-            this.panel5.Location = new System.Drawing.Point(294, 223);
-            this.panel5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(68, 24);
-            this.panel5.TabIndex = 32;
             // 
             // textBox5
             // 
@@ -258,6 +248,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(49)))));
+            this.panel4.Controls.Add(this.comboBox1);
             this.panel4.Controls.Add(this.NM2PB);
             this.panel4.Controls.Add(this.embeds2PB);
             this.panel4.Controls.Add(this.Templates2PB);
@@ -274,6 +265,45 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(212, 757);
             this.panel4.TabIndex = 30;
+            // 
+            // textBox9
+            // 
+            this.textBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
+            this.textBox9.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.75F);
+            this.textBox9.ForeColor = System.Drawing.Color.White;
+            this.textBox9.Location = new System.Drawing.Point(737, 166);
+            this.textBox9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(308, 31);
+            this.textBox9.TabIndex = 68;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(-6, 754);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 70;
+            // 
+            // pictureBox16
+            // 
+            this.pictureBox16.Image = global::CSCord_App.Properties.Resources.Screenshot_2023_06_18_203815;
+            this.pictureBox16.Location = new System.Drawing.Point(1058, 166);
+            this.pictureBox16.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(126, 31);
+            this.pictureBox16.TabIndex = 69;
+            this.pictureBox16.TabStop = false;
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.Image = global::CSCord_App.Properties.Resources.Screenshot_2023_06_17_221749;
+            this.pictureBox15.Location = new System.Drawing.Point(727, 153);
+            this.pictureBox15.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(338, 58);
+            this.pictureBox15.TabIndex = 67;
+            this.pictureBox15.TabStop = false;
             // 
             // pictureBox14
             // 
@@ -296,6 +326,7 @@
             this.NM2PB.TabIndex = 85;
             this.NM2PB.TabStop = false;
             this.NM2PB.Visible = false;
+            this.NM2PB.Click += new System.EventHandler(this.NM2PB_Click);
             // 
             // embeds2PB
             // 
@@ -307,6 +338,7 @@
             this.embeds2PB.Size = new System.Drawing.Size(209, 47);
             this.embeds2PB.TabIndex = 84;
             this.embeds2PB.TabStop = false;
+            this.embeds2PB.Click += new System.EventHandler(this.embeds2PB_Click);
             // 
             // Templates2PB
             // 
@@ -777,52 +809,13 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // pictureBox15
-            // 
-            this.pictureBox15.Image = global::CSCord_App.Properties.Resources.Screenshot_2023_06_17_221749;
-            this.pictureBox15.Location = new System.Drawing.Point(727, 153);
-            this.pictureBox15.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(338, 58);
-            this.pictureBox15.TabIndex = 67;
-            this.pictureBox15.TabStop = false;
-            // 
-            // textBox9
-            // 
-            this.textBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
-            this.textBox9.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.75F);
-            this.textBox9.ForeColor = System.Drawing.Color.White;
-            this.textBox9.Location = new System.Drawing.Point(737, 166);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(308, 31);
-            this.textBox9.TabIndex = 68;
-            // 
-            // pictureBox16
-            // 
-            this.pictureBox16.Image = global::CSCord_App.Properties.Resources.Screenshot_2023_06_18_203815;
-            this.pictureBox16.Location = new System.Drawing.Point(1058, 166);
-            this.pictureBox16.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(126, 31);
-            this.pictureBox16.TabIndex = 69;
-            this.pictureBox16.TabStop = false;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(316, 658);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 70;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
             this.ClientSize = new System.Drawing.Size(1370, 749);
-            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.pictureBox16);
             this.Controls.Add(this.textBox9);
             this.Controls.Add(this.pictureBox15);
@@ -855,7 +848,6 @@
             this.Controls.Add(this.pictureBox25);
             this.Controls.Add(this.pictureBox24);
             this.Controls.Add(this.pictureBox23);
-            this.Controls.Add(this.panel5);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
@@ -874,11 +866,15 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.ForeColor = System.Drawing.Color.White;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "CSCord App";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NM2PB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.embeds2PB)).EndInit();
@@ -926,8 +922,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -953,7 +947,6 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.PictureBox pictureBox17;
-        private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.PictureBox pictureBox23;
         private System.Windows.Forms.PictureBox pictureBox24;
         private System.Windows.Forms.PictureBox pictureBox25;

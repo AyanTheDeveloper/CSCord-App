@@ -71,6 +71,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Transparent.cs">
@@ -78,6 +84,9 @@
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -233,6 +242,8 @@
   <ItemGroup>
     <Content Include="CSCordCredits.py" />
     <Content Include="ErrorHelper.vb" />
+    <None Include="Resources\Screenshot 2023-06-25 160813.png" />
+    <None Include="Resources\Screenshot 2023-06-25 160514.png" />
     <None Include="Resources\Screenshot 2023-06-20 194621.png" />
     <None Include="Resources\det4fms-fca72384-3cb7-495e-b3bd-f7035673cb6a.png" />
   </ItemGroup>
