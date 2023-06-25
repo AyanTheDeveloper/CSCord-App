@@ -3,9 +3,9 @@
 # 🎧 24/7 Support
 Questions, Quries or Suggestions? Join [our discord server](https://discord.gg/m86NNb2Rhy). | Version V.0.3+ will let you know if our service is in maintenence.
 # Changelog - BETA V.0.5 (released)
-New UI like discords settings,
+## New UI like discords settings!
 
-1. You can now send gifs,
+1. You can now send gifs via sending link in the message/description,
    
 2. You will be able attach videos soon,
 
