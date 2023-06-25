@@ -41,7 +41,8 @@ namespace CSCord_App
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-           //test
+            //test
+            Debug.WriteLine("Launched");
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
