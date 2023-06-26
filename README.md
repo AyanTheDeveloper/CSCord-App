@@ -1,4 +1,4 @@
-[Hiring developers, more info in discord server](https://discord.gg/m86NNb2Rhy)
+[Hiring developers, helpers, and mods more info in discord server](https://discord.gg/m86NNb2Rhy)
 
 [![CSCord](https://github.com/AyanTheDeveloper/CSCord/blob/master/cscordico.png?raw=true)](https://github.com/AyanTheDeveloper/CSCord-App) **The App**
  | BETA RELEASED!
