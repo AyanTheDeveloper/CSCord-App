@@ -1,7 +1,7 @@
 [Hiring developers, more info in discord server](https://discord.gg/m86NNb2Rhy)
 
 [![CSCord](https://github.com/AyanTheDeveloper/CSCord/blob/master/cscordico.png?raw=true)](https://github.com/AyanTheDeveloper/CSCord-App) **The App**
- | BETA V.0.5 RELEASED!
+ | BETA RELEASED!
 # 🎧 24/7 Support
 Questions, Quries or Suggestions? Join [our discord server](https://discord.gg/m86NNb2Rhy). | Version V.0.3+ will let you know if our service is in maintenence.
 # Changelog - BETA V.0.5 (released)
